@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styleindex2.css" type="text/css">
+    <title>code.free</title>
+</head>
+<body>
+    <header>
+        <div class="head">  
+            <span class="entete">NS_Coding</span>
+            <div class="navhead" id="aside">
+                <ul>
+                    <li><a class="item_navhead" class="active" href="../../accuiel/index1.html">Home</a></li>
+                    <li><a class="item_navhead" href="../../accuiel/index1.html #debut">Codes</a></li>
+                    <li><a class="item_navhead" href="../../contact/contact.html">contact</a></li>
+                    <li><a class="item_navhead" href="../../login/login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>  
+    </header>
+    <div class="content">
+        <div class="contain"> 
+            <span >On Hover Animated Button</span> 
+            <p style="text-align: center;"><i onmouseover="playAudio()" onmouseout="pauseAudio()" id="podcast" class='bx bx-podcast'></i></p>
+            <audio id="audio" src="../../../../gallery/audio/button.mp3"></audio>
+            <script>
+                // Get the h1 and audio elements
+                const audio = document.getElementById('audio');
+              
+                // Function to play the audio
+                function playAudio() {
+                  audio.play();
+                }
+              
+                // Function to pause the audio
+                function pauseAudio() {
+                  audio.pause();
+                  // Optionally, you can also reset the audio to the beginning
+                  audio.currentTime = 0;
+                }
+              </script>
+            
+            <div class="coprs">
+                <video src="../../.../../../../gallery/submit/video/vd_sub.mp4" controls autoplay></video>
+                <div class="information">
+                    <h2 style="color: white;">Recommended</h2>
+                    <div class="information1">
+                        <p>29 September 2023</p>
+                        <h2>Red header animation</h2>
+                        <h2>404 Page Not Found</h2>
+                        <h2>Loading page</h2>
+                    </div>
+               </div>        
+            </div>
+                    
+            <div class="excute">
+                <a id="Button" href="../../../../gallery/submit/programme/submit.html">Open_code</a>
+
+            </div>   
+        </div>
+        <div class="codes">
+            
+                <h5>Index.html</h5>
+                <div class="codeBlock">
+                    <pre>
+                        <span class="tag">&lt;!DOCTYPE html&gt;</span>
+                        <span class="tag">&lt;html</span> <span class="attribut">lang</span>=<span class="value">"en"</span><span class="tag">&gt</span>;
+                        <span class="tag">&lt;head&gt;
+                            &lt;title&gt;</span>Button Animation<span class="tag">&lt;/title&gt;
+                        &lt;/head&gt;</span>
+                            <span class="tag">&lt;meta</span> <span class="attribut">charset</span>=<span class="value">"UTF-8"</span><span class="tag">&gt;</span>
+                            <span class="tag">&lt;meta</span> <span class="attribut">name</span>=<span class="value">"viewport"</span> <span class="attribut">content</span>=<span class="value">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="tag">&gt;</span>
+                            <span class="tag">&lt;link</span> <span class="attribut">rel</span>=<span class="value">"stylesheet"</span> <span class="attribut">href</span>=<span class="value">"style.css"</span> <span class="attribut">type</span>=<span class="value">"text/css"</span><span class="tag">&gt;</span>
+                        <span class="tag">&lt;/head&gt;</span>
+                        <span class="tag">&lt;body&gt;</span>
+                            <span class="tag">&lt;Button&gt;</span>Submit<span class="tag">&lt;/Button&gt;</span><span class="tag">
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                        </span>
+                        
+                        </span>
+                    </pre>
+                </div>
+                <h5>Style.css</h5>
+                <div class="codeBlock">
+                    <pre>
+                        <span class="tag">body</span> {
+                            <span class="cssAtt">display</span><span class="cssVal">:</span> <span class="cssProp">grid</span>;
+                            <span class="cssAtt">justify-content</span><span class="cssVal">:</span> <span class="cssProp">center</span>;
+                            <span class="cssAtt">align-items</span><span class="cssVal">:</span> <span class="cssProp">center</span>;
+                            <span class="cssAtt">height</span><span class="cssVal">:</span> <span class="cssVal2">100vh</span>;
+                            <span class="cssAtt">overflow</span><span class="cssVal">:</span> <span class="cssProp">hidden</span>;
+                        }
+                
+                        <span class="tag">button</span> {
+                            <span class="cssAtt">color</span><span class="cssVal">:</span> <span class="cssVal2">blue</span>;
+                            <span class="cssAtt">border</span><span class="cssVal">:</span> <span class="cssVal2">none</span>;
+                            <span class="cssAtt">height</span><span class="cssVal">:</span> <span class="cssVal2">40px</span>;
+                            <span class="cssAtt">width</span><span class="cssVal">:</span> <span class="cssVal2">100px</span>;
+                            <span class="cssAtt">border-radius</span><span class="cssVal">:</span> <span class="cssVal2">7px</span>;
+                            <span class="cssAtt">cursor</span><span class="cssVal">:</span> <span class="cssProp">pointer</span>;
+                        }
+                
+                        <span class="tag">button:hover</span> {
+                            <span class="cssAtt">color</span><span class="cssVal">:</span> <span class="cssVal2">white</span>;
+                            <span class="cssAtt">background-color</span><span class="cssVal">:</span> <span class="cssVal2">#3b82f6</span>;
+                            <span class="cssAtt">box-shadow</span><span class="cssVal">:</span> <span class="cssVal2">0 0 0 5px #3b83f65f</span>;
+                        }
+                    </pre>
+                </div> 
+        </div>
+        <div class="iframe">
+            <h3>Preview: If you don't understand the code</h3>
+        
+            <iframe src="https://www.youtube.com/embed/Xs9w8MAB7cY" frameborder="0" allowfullscreen></iframe>
+        </div>        
+    </div>
+    <footer>
+        <p>Copyright © NS_Coding 2023</p>
+    </footer>
+</body>
+</html>

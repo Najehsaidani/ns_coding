@@ -1,0 +1,67 @@
+
+body {
+    height: 100vh;
+    background: #090d09;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+p {
+    width: 40em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font: 400 1em/1.5 "Neuton", sans-serif;
+    color: #ffffff40;
+    display: inline-block;
+    border: 4px double #ffffff40;
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+}
+
+p span {
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.348);
+    background: url("https://cdn03.plentymarkets.com/in4mrd6hvefm/item/images/612/full/72016-612_4.jpg") repeat-y;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation: anim 80s linear infinite;
+}
+@media screen and (max-width:650px){
+    p span {
+        font: 700 1.75em "Oswald", sans-serif;
+        padding: 0.15em 0 0.125em;}
+    p{
+        font: 400 1em "Neuton", sans-serif;
+        padding: 0.5em 0em;
+        width: 30em;
+
+    }
+}
+@media screen and (max-width:450px){
+    p span {
+        font: 700 1.5em "Oswald", sans-serif;
+        padding: 0.15em 0 0.125em;}
+    p{
+        font: 400 0.5em "Neuton", sans-serif;
+        padding: 0.5em 0em;
+        width: 30em;
+
+    }
+}
+
+@keyframes anim {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}

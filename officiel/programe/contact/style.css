@@ -1,0 +1,282 @@
+body{
+    background-color: #12141d;
+    
+}
+*{
+    scroll-behavior: smooth;
+}
+/*--------------------------------------------------------------------head---------------------------------------------------------------*/
+header{
+    position: fixed;
+    top: 0px;
+    background-color: #12141d;
+    width: 100%;
+    z-index: 2;
+    left: 0px;
+}
+.head{
+        position: relative;
+        display:grid;
+        grid-template-columns:3fr 1fr 1fr;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-top: 3px;
+}
+@media screen and (max-width:900px){
+    .head{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    .head .navhead {
+        display: block;
+        grid-column: span 2;
+        
+    } 
+    .head .navhead .item_navhead a{
+        display: block;
+    }
+    .head .entete {
+        grid-column: span 2;
+        
+    } 
+    .title{
+        margin-top: 200px;
+    }
+    
+    
+}
+@media screen and (max-width:550px){
+    .head .navhead ul {
+        align-items: start;
+    }
+    .head .navhead ul a{
+        margin-left: 10px;
+    }
+}
+@media screen and (min-width:900px){
+    .title{
+        margin-top: 250px;
+    }
+}
+/*--------------------------------------------logo------------------------------------------*/
+.head span {
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    background: url("https://codetheworld.io/wp-content/uploads/2023/11/rNPwjWM-animated-text-fill.png") repeat-y;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anim 80s linear infinite;
+}
+@-webkit-keyframes anim {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+.entete{
+    justify-self:start ;
+}
+@media screen and (max-width:500px){
+    .head .entete{
+        width: 50%;
+        margin: 0;
+        font: 700 1.5em "Oswald", sans-serif;
+    }
+    .title{
+        margin-top: 200px;
+    }
+
+    .head .navhead ul a{
+        margin: 10px;
+    }
+    .head .navhead ul {
+        padding: 0;
+    }
+
+}
+@media screen and (max-width:400px){
+    .head .navhead ul {
+        padding: 0px;
+    }
+    .head .entete {
+        padding: 0 40px;
+    }
+    .head .navhead ul a {
+        margin: 0;
+    }
+}
+
+/*---------------------------------------------------------*/
+
+
+/*--------------------------------------------navbar------------------------------------------*/
+.item_navhead{
+    text-decoration:none;
+    margin-top: 0;
+    display: inline;
+    font-family: Inter, sans-serif;
+    color:rgba(255, 255, 255, 0.55);
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+a:hover{
+    background: url("https://codetheworld.io/wp-content/uploads/2023/11/rNPwjWM-animated-text-fill.png") repeat-y;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anim 80s linear infinite;
+
+}
+.head .navhead ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+    justify-content: center;
+}
+
+.head .navhead ul a{
+    margin: 30px;
+}
+.head .navhead ul li {
+    display: inline;
+}
+@media screen and (max-width:415px){
+    .head .navhead ul {
+        padding: 0px;
+    }
+    .head .entete {
+        padding: 0 40px;
+    }
+    .head .navhead ul a {
+        margin: 0;
+    }}
+
+
+.section{
+    box-sizing: border-box;
+    margin-top: 250px;
+    font-family: Inter, sans-serif;
+  
+}
+
+.section .entete{
+    text-align: center;
+    margin-bottom: 48px;
+    
+    
+}
+.section .entete h1{
+    font-size:55px;
+    margin-bottom: 10px;
+    color: white;
+}
+.section .entete .lead{
+    color: #6c757d;
+    font-weight: 400;
+    opacity: 1;
+}
+.section .cont{
+    padding: 36px;
+    border-radius: 20px;
+    background-color: hsla(0, 0%, 100%, 0.05);
+    box-shadow: 0px 0px 31px 0px rgba(0,227,252,0.9);
+    width: 50%;
+    margin: 0 auto;
+
+}
+.section .cont .text1{
+    color: hsla(0, 0%, 100%, 0.5);
+    text-align: center ;
+    margin-bottom: 1.5rem ;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 28px;
+}
+
+input,textarea{
+    background-color: #35373f;
+    color: white;
+    width: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+    
+   
+}
+input{
+    height: 60px;
+}
+textarea{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    resize: none;
+
+}
+input[type="submit"]{
+   width: 40%;
+   background-color: #0c787d;
+   color: white;
+   font-weight: 400;
+   font-size: 20px;
+   transition: background-color 0.3s ease-in-out;
+}
+.section form .input table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+.section .cont form table td{
+    border-spacing: 10px;
+}
+input[type="submit"]:hover{
+    background-color: #2bf4ff;
+    
+}
+footer p{
+    margin-top: 150px;
+    margin-left: 50px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.55);
+  }
+  @media screen and (max-width:500px) {
+   
+    input{
+        height: 30px;
+    }
+    .section form .input table{
+        border-spacing: 3px;
+    }
+    .section .cont .text1{
+        font-size: 12px;
+        margin-bottom: 0.5rem ;
+    }
+    textarea{
+        height: 105px;
+    }
+    input[type="submit"]{
+        width: 50%;
+        font-weight: 300;
+        font-size: 15px;
+     }
+     .section .entete h1{
+        font-size:35px;
+     }
+     footer p{
+        margin-top: 75px;
+    }
+
+    
+  }
+
+

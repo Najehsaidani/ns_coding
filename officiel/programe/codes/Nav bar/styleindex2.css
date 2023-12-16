@@ -1,0 +1,432 @@
+body{
+    background-color: #12141d;
+    list-style: none;
+    text-decoration: none;
+}
+*{
+    scroll-behavior: smooth;
+}
+/*--------------------------------------------------------------------head---------------------------------------------------------------*/
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #12141d;
+    width: 100%;
+    z-index: 2;
+}
+.head{
+        position: relative;
+        display:grid;
+        grid-template-columns:3fr 1fr 1fr;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-top: 3px;
+}
+@media screen and (max-width:900px){
+    .head{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    .head .navhead {
+        display: block;
+        grid-column: span 2;
+        
+    } 
+    .head .navhead .item_navhead a{
+        display: block;
+    }
+    .head .entete {
+        grid-column: span 2;
+        
+    } 
+    .title{
+        margin-top: 200px;
+    }
+    
+    
+}
+@media screen and (max-width:550px){
+    .head .navhead ul {
+        align-items: start;
+    }
+}
+@media screen and (min-width:900px){
+    .title{
+        margin-top: 250px;
+    }
+    .content{
+        margin-top: 260px;
+    }
+}
+/*--------------------------------------------logo------------------------------------------*/
+.head span {
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    background: url("https://codetheworld.io/wp-content/uploads/2023/11/rNPwjWM-animated-text-fill.png") repeat-y;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anim 80s linear infinite;
+}
+@-webkit-keyframes anim {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+.entete{
+    justify-self:start ;
+}
+@media screen and (max-width:500px){
+    .head .entete{
+        width: 50%;
+        margin: 0;
+        font: 700 1.5em "Oswald", sans-serif;
+    }
+    .title{
+        margin-top: 200px;
+    }
+
+    .head .navhead ul a{
+        margin: 10px;
+    }
+    .head .navhead ul {
+        padding: 0;
+    }
+}
+/*---------------------------------------------------------*/
+
+
+/*--------------------------------------------navbar------------------------------------------*/
+.item_navhead{
+    text-decoration:none;
+    margin-top: 0;
+    display: inline;
+    font-family: Inter, sans-serif;
+    color:rgba(255, 255, 255, 0.55);
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+header .head .navhead ul a:hover{
+    background: url("https://codetheworld.io/wp-content/uploads/2023/11/rNPwjWM-animated-text-fill.png") repeat-y;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anim 80s linear infinite;
+
+}
+.head .navhead ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+    justify-content: center;
+}
+
+.head .navhead ul a{
+    margin: 20px;
+}
+.head .navhead ul li {
+    display: inline;
+}
+@media screen and (max-width:400px){
+    .head .navhead ul {
+        padding: 0px;
+    }
+    .head .entete {
+        padding: 0 40px;
+    }
+    .head .navhead ul a {
+        margin: 0;
+    }
+}
+/*-------------------------------.content------------------------------*/
+.content{
+    margin-top: 200px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    font: 700 2em "Oswald", sans-serif;
+    z-index: 1;
+    
+}
+.content .contain .coprs {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.content .contain video{
+    width: 100%;
+    height: 130%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(45,255,196,0.9);
+}
+.content .contain span{
+    text-align: center;
+    color: white;
+    font: 700 2em "Oswald", sans-serif;
+    line-height: 1.2;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    display: block;
+
+}
+#podcat{
+    text-align: center;
+}
+h2,h3{
+    line-height: 1.2;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 1.25em;
+}
+p{
+    margin: 0;
+}
+.information p{
+    margin-top: 0px;
+}
+.information1 p{
+    color:rgba(255, 255, 255, 0.55);
+    font: 700 0.45em "Oswald", sans-serif;
+
+}
+.information1 h2{
+    color:rgba(255, 255, 255, 0.55);
+    font: 700 1em "Oswald", sans-serif;
+
+}
+.content .contain .excute{
+    margin-top: 140px;
+     margin-left: 20px;
+}
+.content .contain .excute #Button{
+    text-decoration: none;
+    color: #01939c;
+    font-size: 18px;
+    padding: 0.6em 2em;
+    letter-spacing: 0.1em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 7px;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid #0dd1db;
+    color: #0dd1db;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+   
+}
+.content .contain .excute #Button:hover{
+    color: rgb(107, 248, 255);
+}
+.content .codes .html img{
+    width: 500px;
+
+}
+.codes h5{
+    color: white;
+}
+.content .contain #podcast{
+    cursor: pointer;
+    color: #0dd1db;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    text-align: center;
+
+}
+@media screen and (max-width:1250px) {
+    .content .contain span{
+        font: 700 1.5em "Oswald", sans-serif;
+        line-height: 1.2;
+        
+    
+    }
+}
+@media screen and (max-width:1050px) {
+    .content .contain span{
+        font: 700 1.25em "Oswald", sans-serif;
+        line-height: 1.2;
+    }
+    
+}
+@media screen and (max-width:550px) {
+    .content .contain span{
+        font: 700 1.15em "Oswald", sans-serif;
+        line-height: 1.2;
+    }
+    .information1{
+        color:rgba(255, 255, 255, 0.55);
+        font: 700 0.81em "Oswald", sans-serif;
+    
+    }
+    
+    
+}
+@media screen and (max-width:900px){
+    .content{
+        margin-top: 250px;
+    }
+}
+.codeBlock{
+    background-color: #282a36;
+    color:  white;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    border-radius: 10px;
+}
+.codeBlock pre
+{
+    margin-left: -13%;
+    font-family: monospace;
+    font-size: 16px;
+}
+.tag{
+    color: #ff79c6;
+}
+.attribut{
+    color: #50fa7b;
+}
+.value{
+    color: #f1fa8c;
+}
+.contune{
+    color: #f1fa8c;
+}
+
+.cssAtt
+{
+    color: cyan;
+
+}
+.cssVal
+{
+    color: rgb(184, 7, 184);
+ 
+}
+.cssVal2
+{
+    color: rgb(184, 7, 184);
+}
+.cssProp
+{
+    color: yellow;
+}
+.codes{
+    display: grid;
+}
+@media screen and (max-width:1300px){
+    .codeBlock pre{
+        margin-left: -17%;
+    }
+}
+@media screen and (max-width:850px){
+    .codeBlock pre{
+        margin-left: -27%;
+    }
+}
+@media screen and (max-width: 650px){
+    .codeBlock pre {
+    margin-left: -37%;
+}
+.content .contain video {
+    height: 105%;
+}
+}
+@media screen and (max-width: 450px){
+    .codeBlock pre {
+    margin-left: -60%;
+}
+.content .contain video{
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(45,255,196,0.9);
+}}
+
+@media screen and (max-width: 350px){
+    .codeBlock pre {
+    margin-left: -47%;
+    font-size: 10px;
+}
+
+h2{
+    font: 700 1em "Oswald", sans-serif;
+    line-height: 1.2;
+}
+.information1{
+    color:rgba(255, 255, 255, 0.55);
+    font: 700 0.61em "Oswald", sans-serif;
+
+}.content .contain span{
+    font: 700 1em "Oswald", sans-serif;
+    line-height: 1.2;
+}
+
+}
+@media screen and (max-width: 270px){
+    .information1{
+        color:rgba(255, 255, 255, 0.55);
+        font: 700 0.61em "Oswald", sans-serif;
+    
+    }
+    .information h2{
+        color:rgba(255, 255, 255, 0.55);
+        font: 700 0.91em "Oswald", sans-serif;
+    
+    }
+    
+
+}
+@media screen and (max-width: 260px){
+    .codeBlock pre {
+    margin-left: -65%;
+    font-size: 10px;
+}.content .contain .excute{
+    margin-top: 140px;
+    margin-left: 10px;
+}
+}
+/*-------------------------------------------------------------------------------------------*/
+@media screen and (max-width:800px)  {
+    .content .contain .coprs {
+        margin-top: 20px;
+        display: grid;
+        gap: 150px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+    .content .contain video{
+        width: 90%;
+        height: 130%;    
+    }
+    .content .contain .excute {
+        margin-top: 25px;
+    }
+    .information{
+        justify-self: start;
+    }
+    .information{
+        justify-self: start;
+    }
+    
+    
+}
+footer p{
+    margin: 74px 0%;
+    color: rgba(255, 255, 255, 0.55);
+  }
+

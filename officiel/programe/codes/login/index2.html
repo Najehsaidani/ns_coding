@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styleindex2.css" type="text/css">
+    <title>code.free</title>
+</head>
+<body>
+    <header>
+        <div class="head">  
+            <span class="entete">NS_Coding</span>
+            <div class="navhead" id="aside">
+                <ul>
+                    <li><a class="item_navhead" class="active" href="../../accuiel/index1.html">Home</a></li>
+                    <li><a class="item_navhead" href="../../accuiel/index1.html #debut">Codes</a></li>
+                    <li><a class="item_navhead" href="../../contact/contact.html">contact</a></li>
+                    <li><a class="item_navhead" href="../../login/login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>  
+    </header>
+    <div class="content">
+        <div class="contain"> 
+            <span >Loading page</span> 
+            <p style="text-align: center;"><i onmouseover="playAudio()" onmouseout="pauseAudio()" id="podcast" class='bx bx-podcast'></i></p>
+            <audio id="audio" src="../../../../gallery/audio/ElevenLabs_2023-12-14T23_43_08_Emily_pre_s50_sb75_se0_b_m2.mp3"></audio>
+            <script>
+                // Get the h1 and audio elements
+                const audio = document.getElementById('audio');
+              
+                // Function to play the audio
+                function playAudio() {
+                  audio.play();
+                }
+              
+                // Function to pause the audio
+                function pauseAudio() {
+                  audio.pause();
+                  // Optionally, you can also reset the audio to the beginning
+                  audio.currentTime = 0;
+                }
+              </script>
+            
+            <div class="coprs">
+                <video src="../../.../../../../gallery/login/video/Enregistrement 2023-12-15 082315.mp4" controls autoplay></video>
+                <div class="information">
+                    <h2 style="color: white;">Recommended</h2>
+                    <div class="information1">
+                        <p>29 September 2023</p>
+                        <h2>Red header animation</h2>
+                        <h2>On Hover Animated Button</h2>
+                        <h2>404 Page Not Found</h2>
+                    </div>
+               </div>        
+            </div>
+                    
+            <div class="excute">
+                <a id="Button" href="../../../../gallery/login/programme/login.html">Open_code</a>
+
+            </div>   
+        </div>
+        <div class="codes">
+            
+                <h5>Index.html</h5>
+                <div class="codeBlock">
+                    <pre>
+                        <span class="tag">&lt;!DOCTYPE html&gt;</span>
+                        <span class="tag">&lt;html</span> <span class="attribut">lang</span>=<span class="value">"en"</span><span class="tag">&gt;</span>;
+                        <span class="tag">&lt;head&gt;</span>
+                            <span class="tag">&lt;meta</span> <span class="attribut">charset</span>=<span class="value">"UTF-8"</span><span class="tag">&gt;</span>
+                            <span class="tag">&lt;meta</span> <span class="attribut">name</span>=<span class="value">"viewport"</span> <span class="attribut">content</span>=<span class="value">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span>
+                            <span class="tag">&lt;link</span> <span class="attribut">rel</span>=<span class="value">"stylesheet"</span> <span class="attribut">href</span>=<span class="value">"style.css"</span><span class="tag">&gt;</span>
+                            <span class="tag">&lt;title&gt;</span>Loading page<span class="tag">&lt;/title&gt;</span>
+                            <span class="tag">&lt;link</span> <span class="attribut">rel</span>=<span class="value">"stylesheet"</span> <span class="attribut">type</span>=<span class="value">"text/css"</span> <span class="attribut">href</span>=<span class="value">"styles.css"</span><span class="tag">&gt;</span>
+                        <span class="tag">&lt;/head&gt;</span>
+                        <span class="tag">&lt;body&gt;</span>
+                            <span class="tag">&lt;div</span> <span class="attribut">class</span>=<span class="value">"loader"</span><span class="tag">&gt;&lt;/div&gt;</span>
+                        <span class="tag">&lt;/body&gt;</span>
+                    <span class="tag">&lt;/html&gt;</span>
+                    </pre>
+                </div>
+                <h5>Style.css</h5>
+                <div class="codeBlock">
+                    <pre>
+                        <span class="tag">body</span> {
+                            <span class="cssAtt">margin</span>: <span class="cssVal">0</span>;
+                            <span class="cssAtt">padding</span>: <span class="cssVal">0</span>;
+                            <span class="cssAtt">display</span>: <span class="cssProp">grid</span>;
+                            <span class="cssAtt">justify-content</span>: <span class="cssProp">center</span>;
+                            <span class="cssAtt">align-items</span>: <span class="cssProp">center</span>;
+                            <span class="cssAtt">height</span>: <span class="cssVal">100vh</span>;
+                            <span class="cssAtt">background</span>:<span class="cssVal"> #34db66</span>;
+                        }
+                
+                        <span class="tag">.loader</span> {
+                            <span class="cssAtt">width</span>: <span class="cssVal">100px</span>;
+                            <span class="cssAtt">height</span>: <span class="cssVal">100px</span>;
+                            <span class="cssAtt">border</span>: <span class="cssVal">4px <span class="cssProp">solid</span>  #3498db</span>;
+                            <span class="cssAtt">border-top</span>: <span class="cssVal">4px <span class="cssProp">solid</span>  #e74c3c</span>;
+                            <span class="cssAtt">border-radius</span>: <span class="cssVal">50%</span>;
+                            <span class="cssAtt">animation</span>: <span class="cssProp">spin <span class="cssVal">2s</span> linear infinite</span>;
+                        }
+                
+                        <span class="tag">@keyframes spin</span> {
+                            <span class="cssVal2">0%</span> {
+                                <span class="cssAtt">transform</span>: <span class="cssProp"> rotate(<span class="cssVal">0deg</span>)</span>;
+                            }
+                            <span class="cssVal2">100%</span> {
+                                <span class="cssAtt">transform</span>:<span class="cssProp"> rotate(<span class="cssVal">360deg</span>)</span>;
+                            }
+                        }
+                    </pre>
+                    
+                </div>
+        </div>
+    </div>
+    <div class="iframe">
+        <h3>Preview: If you don't understand the code</h3>
+    
+        <iframe src="https://www.youtube.com/embed/9r9AyqMZ3z8"frameborder="0" allowfullscreen></iframe>
+    </div>
+    <footer>
+        <p>Copyright © NS_Coding 2023</p>
+    </footer>
+</body>
+</html>

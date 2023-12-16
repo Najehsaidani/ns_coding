@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NS_Coding/login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="head">  
+        <span class="entete">NS_Coding</span>
+        <div class="navhead" id="aside">
+            <ul>
+                <li><a class="item_navhead" class="active" href="../accuiel/index1.html">Home</a></li>
+                <li><a class="item_navhead" href="../accuiel/index1.html #debut">Codes</a></li>
+                <li><a class="item_navhead" href="../contact/contact.html">contact</a></li>
+                <li><a class="item_navhead" href="../login/login.html">Login</i></a></li>
+            </ul>
+        </div>
+    </div>  
+  </header>
+  <div id="login">
+    <h1>Sign in </h1>
+    <form name="form-login">
+          <input type="text" class="input" id="user" placeholder="Username/Email" />
+          <input type="password" class="input" id="pass" placeholder="Password" />
+          <button type="submit" class="submitbtn"><a style="text-decoration: none;  color: white;" href="../accuiel/index1.html">Sign in</a></button> 
+          <button type="reset" class="submitbtn">Effacer</button> 
+    </form>
+    <div class="etoile">
+        <a onclick="show2()">Sign up</a>
+    </div>
+  </div>
+  <div id="login_1" style="display: none;">
+    <h1> Sign up</h1>
+    <form name="form-login">
+          <input type="text" class="input" id="user" placeholder="Prenom" />
+          <input type="text" class="input" id="user_1" placeholder="Nom" />
+          <input type="date" class="Number" id="user_3"  />
+          <input type="text" class="input" id="user_2" placeholder="Username/Email" />
+          <input type="password" class="input" id="pass" placeholder="Password" />
+          <div id="field">
+              <div class="genre">
+              <h3>Genre : </h3>
+              <label for="D1">Homme : </label><input type="radio" name="sexe[]" id="D1">
+              <label for="D2">Femme : </label><input type="radio" name="sexe[]" id="D2">
+            </div>
+            <div class="dev">
+              <h3>Are you interested in Back-end or Front-end :</h3>
+              <label for="S1">Front-end :</label><input type="checkbox" name="ch[]" id="S1">
+              <label for="S2">Back-end  :</label><input type="checkbox" name="ch[]" id="S2">
+              <h3>Select language you prefer : </h3>
+              <select name="language" id="lng">
+                <optgroup label="Back_end"> 
+                <option value="B1">Python</option>
+                <option value="B2">C++</option>
+                <option value="B3">PHP</option>
+                <option value="B4">JAVA</option>
+                </optgroup>
+                  <optgroup label="Front_end"> 
+                  <option value="F1">Java_script</option>
+                  <option value="F1" selected>Html</option>
+                  <option value="F1">CSS</option>
+                </optgroup>
+              </select>
+              <h3>Give me your level in this language : </h3>
+              <input type="range"  class="input" id="user_4" list="values" step="25"/>
+              <datalist id="values">
+                <option value="0" label="Beginner"></option>
+                <option value="25" label="Intermediate"></option>
+                <option value="50" label="Advanced"></option>
+                <option value="75" label="Expert"></option>
+                <option value="100" label="Master"></option>
+              </datalist>
+              <h3>Send us a photo of the latest project :</h3>
+              <input type="file" accept=".jpg,.jpeg,.png,gif" id="img"/><br/>
+
+            </div>
+            <div class="info">
+              <h3>How many months have you been coding :</h3>
+              <input type="number" name="num" min="1" step="1">
+            </div>
+      
+          </div>
+          
+          
+          
+          <button type="submit" class="submitbtn" ><a style="text-decoration: none;  color: white;" href="../configurate/inex.html">Sign up</a></button> 
+          <button type="reset" class="submitbtn">Effacer</button> 
+    </form>
+    <div class="etoile">
+          <a onclick="show1()">Sign in</a>
+    </div>
+  </div>
+  <script >
+    function show1(){
+      document.getElementById('login').style.display="block";
+      document.getElementById('login_1').style.display="none";
+    }
+    function show2(){
+      document.getElementById('login').style.display="none";
+      document.getElementById('login_1').style.display="block";
+    }
+
+  </script>
+ 
+  <footer>
+    <p>Copyright © NS_Coding 2023</p>
+  </footer>
+</body>
+</html>
